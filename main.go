@@ -17,7 +17,7 @@ var (
 
 	addr          = flag.String("addr", ":5995", "服务监听地址")
 	debug         = flag.Bool("debug", false, "是否开打Debug模式")
-	prefix        = flag.String("prefix", "http://u0x.cn/", "短链接前缀")
+	prefix        = flag.String("prefix", "http://u8x.cc/", "短链接前缀")
 	idStart       = flag.Int64("id", 600000, "自增ID起始值")
 	mongoAddr     = flag.String("mongo.addr", "localhost:27017", "MongoDB服务地址")
 	mongoUser     = flag.String("mongo.user", "", "MongoDB用户名")

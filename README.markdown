@@ -3,6 +3,11 @@
 
 短网址服务
 
+### 启动服务
+
+```
+```
+
 
 ### 接口
 
@@ -12,9 +17,8 @@
 GET /v1/shorten?long_url=
 
 {
-    "data": "http://u0x.cn/2W5S",
+    "data": "http://u8x.cc/2W5S",
     "err": "",
-    "err_code": 0,
-    "ok": true
+    "code": 0,
 }
 ```

@@ -9,3 +9,7 @@ type Response struct {
 	ErrMsg string      `json:"err_msg"`
 	Data   interface{} `json:"data"`
 }
+
+const (
+	CodeCommonError = 1
+)

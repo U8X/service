@@ -6,6 +6,7 @@ import (
 	"time"
 
 	"github.com/Sirupsen/logrus"
+	u8xhttp "github.com/U8X/service/http"
 	"github.com/U8X/service/shorten"
 	"github.com/go-redis/redis"
 	"gopkg.in/mgo.v2"
@@ -71,7 +72,7 @@ func main() {
 	st := &shorten.MongoDBStore{C: collection}
 	rt := shorten.NewRedisStore(st, rc)
 	sh := shorten.NewPersistentShorten(bs, rt)
-	sr := &server{Service: sh, Prefix: *prefix}
+	sr := &u8xhttp.Server{Service: sh, Prefix: *prefix}
 
 	go func() {
 		logrus.Debugf("启动短链接服务: addr=%s, prefix=%s", *addr, *prefix)

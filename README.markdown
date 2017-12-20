@@ -22,3 +22,16 @@ GET /v1/shorten?long_url=
     "code": 0,
 }
 ```
+
+#### 短链接转长链接
+
+```
+GET /v1/expand?short_url=
+
+{
+    "code": 0,
+    "data": "http://yuez.me",
+    "err_msg": ""
+}
+```
+
